@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Shield, MapPin, Star, Clock, Users, ThumbsUp, CheckCircle, Phone } from "lucide-react";
 import SectionHeader from "@/components/ui/SectionHeader";
 import CTAButton from "@/components/ui/CTAButton";
@@ -65,18 +66,28 @@ export default function AboutPage() {
                 </p>
               </div>
             </div>
-            <div className="grid grid-cols-2 gap-4">
-              {[
-                { number: "500+", label: "Homes Cleaned" },
-                { number: "5★", label: "Average Rating" },
-                { number: "Nassau &\nSuffolk", label: "Counties Served" },
-                { number: "100%", label: "Satisfaction Rate" },
-              ].map((stat, i) => (
-                <div key={i} className="bg-navy-card border border-navy-border rounded-2xl p-6 text-center">
-                  <div className="text-3xl font-bold text-white mb-1 whitespace-pre-line leading-tight">{stat.number}</div>
-                  <div className="text-silver text-sm">{stat.label}</div>
-                </div>
-              ))}
+            <div className="space-y-6">
+              <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden border border-navy-border">
+                <Image
+                  src="/images/about-team.jpg"
+                  alt="One Source Solutions team"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                {[
+                  { number: "500+", label: "Homes Cleaned" },
+                  { number: "5★", label: "Average Rating" },
+                  { number: "Nassau &\nSuffolk", label: "Counties Served" },
+                  { number: "100%", label: "Satisfaction Rate" },
+                ].map((stat, i) => (
+                  <div key={i} className="bg-navy-card border border-navy-border rounded-2xl p-6 text-center">
+                    <div className="text-3xl font-bold text-white mb-1 whitespace-pre-line leading-tight">{stat.number}</div>
+                    <div className="text-silver text-sm">{stat.label}</div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

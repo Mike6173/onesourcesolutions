@@ -6,8 +6,17 @@ import { BUSINESS } from "@/lib/constants";
 export default function Hero() {
   return (
     <section className="relative min-h-dvh flex flex-col justify-center overflow-hidden pt-20 pb-16">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-navy via-navy to-navy-light" />
+      {/* Background image */}
+      <div className="absolute inset-0">
+        <Image
+          src="/images/hero-exterior.jpg"
+          alt="Beautiful Long Island neighborhood with pristine homes"
+          fill
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-navy/75 bg-gradient-to-r from-navy/95 via-navy/80 to-navy/60" />
+      </div>
 
       {/* Subtle grid pattern */}
       <div
@@ -20,18 +29,6 @@ export default function Hero() {
 
       {/* Electric blue glow */}
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-electric/5 blur-3xl pointer-events-none" />
-
-      {/* Watermark logo */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
-        <Image
-          src={BUSINESS.logo}
-          alt=""
-          width={700}
-          height={200}
-          className="w-auto h-48 sm:h-64 md:h-80 object-contain opacity-[0.06]"
-          aria-hidden
-        />
-      </div>
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">

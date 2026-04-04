@@ -1,11 +1,19 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Zap, Home, Droplets, Sparkles, ArrowRight, CheckCircle } from "lucide-react";
 import SectionHeader from "@/components/ui/SectionHeader";
 import CTAButton from "@/components/ui/CTAButton";
 import FinalCTA from "@/components/sections/FinalCTA";
 import { buildMetadata } from "@/lib/seo";
 import { SERVICES } from "@/lib/constants";
+
+const serviceImages: Record<string, string> = {
+  "power-washing": "/images/power-washing.jpg",
+  "soft-house-washing": "/images/soft-house-washing.jpg",
+  "gutter-cleaning": "/images/gutter-cleaning.jpg",
+  "window-cleaning": "/images/window-cleaning.jpg",
+};
 
 export const metadata: Metadata = buildMetadata({
   title: "Exterior Cleaning Services Long Island, NY",
@@ -93,21 +101,30 @@ export default function ServicesPage() {
                     Learn About {service.name} <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-150" />
                   </Link>
                 </div>
-                <div className={`bg-navy-card border border-navy-border rounded-2xl p-8 ${i % 2 === 1 ? "lg:order-1" : ""}`}>
-                  <div className="flex items-center gap-3 mb-4">
-                    {service.icon}
-                    <span className="text-white font-bold text-xl">{service.name}</span>
+                <div className={`bg-navy-card border border-navy-border rounded-2xl overflow-hidden ${i % 2 === 1 ? "lg:order-1" : ""}`}>
+                  <div className="relative aspect-[4/3] w-full">
+                    <Image
+                      src={serviceImages[service.slug]}
+                      alt={`${service.name} service on Long Island`}
+                      fill
+                      className="object-cover"
+                    />
                   </div>
-                  <div className="h-px bg-navy-border mb-6" />
-                  <p className="text-silver text-sm leading-relaxed mb-6">
-                    {service.slug === "power-washing" && "Remove years of built-up dirt, stains, algae, and grime from concrete, brick, wood, and stone surfaces. Our power washing service restores your property's hardscaping to like-new condition."}
-                    {service.slug === "soft-house-washing" && "Protect your investment with our low-pressure house washing that safely removes mold, mildew, and algae from your siding — without the risk of damage from excessive pressure."}
-                    {service.slug === "gutter-cleaning" && "Don't wait for water damage to tell you your gutters are clogged. Our professional gutter cleaning keeps your drainage system working properly, protecting your home year-round."}
-                    {service.slug === "window-cleaning" && "Let natural light back into your home with our streak-free window cleaning service. We clean every pane, frame, sill, and screen for a complete, polished result."}
-                  </p>
-                  <CTAButton href={`/services/${service.slug}`} variant="outline" className="w-full justify-center" arrow>
-                    View Full Details
-                  </CTAButton>
+                  <div className="p-8">
+                    <div className="flex items-center gap-3 mb-4">
+                      {service.icon}
+                      <span className="text-white font-bold text-xl">{service.name}</span>
+                    </div>
+                    <p className="text-silver text-sm leading-relaxed mb-6">
+                      {service.slug === "power-washing" && "Remove years of built-up dirt, stains, algae, and grime from concrete, brick, wood, and stone surfaces. Our power washing service restores your property's hardscaping to like-new condition."}
+                      {service.slug === "soft-house-washing" && "Protect your investment with our low-pressure house washing that safely removes mold, mildew, and algae from your siding — without the risk of damage from excessive pressure."}
+                      {service.slug === "gutter-cleaning" && "Don't wait for water damage to tell you your gutters are clogged. Our professional gutter cleaning keeps your drainage system working properly, protecting your home year-round."}
+                      {service.slug === "window-cleaning" && "Let natural light back into your home with our streak-free window cleaning service. We clean every pane, frame, sill, and screen for a complete, polished result."}
+                    </p>
+                    <CTAButton href={`/services/${service.slug}`} variant="outline" className="w-full justify-center" arrow>
+                      View Full Details
+                    </CTAButton>
+                  </div>
                 </div>
               </div>
             ))}

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { MapPin, CheckCircle, Phone, ArrowRight } from "lucide-react";
 import CTAButton from "@/components/ui/CTAButton";
 import FAQAccordion from "@/components/ui/FAQAccordion";
@@ -29,7 +30,16 @@ export default function LocationPageLayout({
     <>
       {/* Hero */}
       <section className="pt-32 pb-20 bg-navy relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-navy via-navy to-navy-light" />
+        <div className="absolute inset-0">
+          <Image
+            src="/images/hero-exterior.jpg"
+            alt={`Exterior cleaning services in ${name}, Long Island`}
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-navy/80 bg-gradient-to-r from-navy/95 via-navy/85 to-navy/70" />
+        </div>
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-electric/5 rounded-full blur-3xl" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Breadcrumb */}

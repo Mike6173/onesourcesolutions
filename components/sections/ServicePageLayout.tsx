@@ -1,8 +1,16 @@
 import Link from "next/link";
+import Image from "next/image";
 import { CheckCircle, Phone, ArrowRight } from "lucide-react";
 import CTAButton from "@/components/ui/CTAButton";
 import FAQAccordion from "@/components/ui/FAQAccordion";
 import { BUSINESS, SERVICES } from "@/lib/constants";
+
+const SERVICE_IMAGES: Record<string, string> = {
+  "power-washing": "/images/power-washing.jpg",
+  "soft-house-washing": "/images/soft-house-washing.jpg",
+  "gutter-cleaning": "/images/gutter-cleaning.jpg",
+  "window-cleaning": "/images/window-cleaning.jpg",
+};
 
 interface ServicePageLayoutProps {
   name: string;
@@ -39,7 +47,18 @@ export default function ServicePageLayout({
     <>
       {/* Hero */}
       <section className="pt-32 pb-20 bg-navy relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-navy via-navy to-navy-light" />
+        {SERVICE_IMAGES[slug] && (
+          <div className="absolute inset-0">
+            <Image
+              src={SERVICE_IMAGES[slug]}
+              alt={`${name} service on Long Island`}
+              fill
+              className="object-cover"
+              priority
+            />
+            <div className="absolute inset-0 bg-navy/80 bg-gradient-to-r from-navy/95 via-navy/85 to-navy/70" />
+          </div>
+        )}
         <div className="absolute top-1/2 right-0 w-[500px] h-[500px] bg-electric/5 rounded-full blur-3xl" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Breadcrumb */}
@@ -94,6 +113,16 @@ export default function ServicePageLayout({
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2">
               <h2 className="text-2xl sm:text-3xl font-bold text-white mb-6">About Our {name} Service</h2>
+              {SERVICE_IMAGES[slug] && (
+                <div className="relative w-full aspect-video rounded-2xl overflow-hidden mb-8 border border-navy-border">
+                  <Image
+                    src={SERVICE_IMAGES[slug]}
+                    alt={`Professional ${name.toLowerCase()} service`}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              )}
               <div className="space-y-4">
                 {description.map((para, i) => (
                   <p key={i} className="text-silver leading-relaxed">{para}</p>
