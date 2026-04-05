@@ -1,7 +1,7 @@
 import { Zap, Home, Droplets, Sparkles } from "lucide-react";
-import ServiceCard from "@/components/ui/ServiceCard";
-import SectionHeader from "@/components/ui/SectionHeader";
-import CTAButton from "@/components/ui/CTAButton";
+import ServiceCardLight from "@/components/ui/light/ServiceCardLight";
+import SectionHeaderLight from "@/components/ui/light/SectionHeaderLight";
+import CTAButtonLight from "@/components/ui/light/CTAButtonLight";
 import { SERVICES } from "@/lib/constants";
 
 const iconMap: Record<string, React.ReactNode> = {
@@ -11,11 +11,11 @@ const iconMap: Record<string, React.ReactNode> = {
   "window-cleaning": <Sparkles className="w-6 h-6" />,
 };
 
-export default function ServicesGrid() {
+export default function ServicesGridLight() {
   return (
-    <section className="py-20 lg:py-28 bg-navy section-divider">
+    <section className="py-20 lg:py-28 bg-gray-50 border-t border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeader
+        <SectionHeaderLight
           eyebrow="What We Do"
           title="Professional Exterior Cleaning Services"
           subtitle="From driveways and siding to gutters and windows, we handle every aspect of your home's exterior with precision and care."
@@ -23,7 +23,7 @@ export default function ServicesGrid() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {SERVICES.map((service) => (
-            <ServiceCard
+            <ServiceCardLight
               key={service.slug}
               slug={service.slug}
               name={service.name}
@@ -34,9 +34,9 @@ export default function ServicesGrid() {
         </div>
 
         <div className="mt-12 text-center">
-          <CTAButton href="/services" variant="secondary" size="md" arrow>
+          <CTAButtonLight href="/services" variant="secondary" size="md" arrow>
             Explore All Services
-          </CTAButton>
+          </CTAButtonLight>
         </div>
       </div>
     </section>

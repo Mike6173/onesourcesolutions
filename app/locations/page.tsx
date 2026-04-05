@@ -8,7 +8,7 @@ import { LOCATIONS, ALL_LOCATIONS, SERVICES } from "@/lib/constants";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Service Areas — Long Island, NY",
+  title: "Service Areas, Long Island, NY",
   description:
     "One Source Solutions serves Nassau and Suffolk Counties across Long Island, NY. Expert power washing, soft washing, gutter cleaning, and window cleaning near you.",
   path: "/locations",
@@ -28,7 +28,7 @@ export default function LocationsPage() {
             Exterior Cleaning Services Across Long Island
           </h1>
           <p className="text-silver text-lg leading-relaxed max-w-2xl mx-auto">
-            One Source Solutions serves Nassau and Suffolk Counties. Expert power washing, soft house washing, gutter cleaning, and window cleaning — wherever you are on Long Island.
+            One Source Solutions serves Nassau and Suffolk Counties. Expert power washing, soft house washing, gutter cleaning, and window cleaning, wherever you are on Long Island.
           </p>
         </div>
       </section>
@@ -84,7 +84,7 @@ export default function LocationsPage() {
           <SectionHeader
             eyebrow="All Service Areas"
             title="We Serve These Long Island Communities"
-            subtitle="Our service area covers Nassau and Suffolk Counties. Don't see your town? Contact us — we likely serve your area."
+            subtitle="Our service area covers Nassau and Suffolk Counties. Don't see your town? Contact us, we likely serve your area."
           />
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
             {ALL_LOCATIONS.map((town) => {
@@ -128,7 +128,7 @@ export default function LocationsPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {[
                 { title: "Local Expertise", desc: "We understand Long Island's climate and what your home needs to stay clean." },
-                { title: "Faster Scheduling", desc: "No waiting weeks — we can typically schedule within a few business days." },
+                { title: "Faster Scheduling", desc: "No waiting weeks, we can typically schedule within a few business days." },
                 { title: "Community Accountability", desc: "As a local business, our reputation is everything. We always do right by our customers." },
                 { title: "Supporting Local", desc: "Your investment stays in the Long Island community when you hire local." },
               ].map((item, i) => (

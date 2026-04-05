@@ -17,7 +17,7 @@ const faqCategories = [
     faqs: [
       {
         q: "What areas do you serve on Long Island?",
-        a: "We serve all of Long Island, covering Nassau and Suffolk Counties. Our primary service areas include Huntington, Babylon, Islip, Smithtown, Hempstead, Oyster Bay, Brookhaven, and dozens of surrounding communities. If you're on Long Island, we can help — contact us to confirm your location.",
+        a: "We serve all of Long Island, covering Nassau and Suffolk Counties. Our primary service areas include Huntington, Babylon, Islip, Smithtown, Hempstead, Oyster Bay, Brookhaven, and dozens of surrounding communities. If you're on Long Island, we can help, contact us to confirm your location.",
       },
       {
         q: "Are you licensed and insured?",
@@ -25,7 +25,7 @@ const faqCategories = [
       },
       {
         q: "Is One Source Solutions locally owned?",
-        a: "Yes — we're a locally owned and operated business based right here on Long Island. We care deeply about the communities we serve and take pride in delivering the kind of service that builds long-term relationships with homeowners.",
+        a: "Yes, we're a locally owned and operated business based right here on Long Island. We care deeply about the communities we serve and take pride in delivering the kind of service that builds long-term relationships with homeowners.",
       },
       {
         q: "Who is my point of contact?",
@@ -42,7 +42,7 @@ const faqCategories = [
       },
       {
         q: "What is the difference between power washing and soft washing?",
-        a: "Power washing uses high-pressure water to clean hard surfaces like concrete, brick, and stone. Soft washing uses low pressure combined with professional cleaning solutions — it's the correct and safe method for cleaning your home's siding, roof, and other delicate surfaces. Using high pressure on siding can force water behind panels and cause damage. We use the right method for every surface.",
+        a: "Power washing uses high-pressure water to clean hard surfaces like concrete, brick, and stone. Soft washing uses low pressure combined with professional cleaning solutions, it's the correct and safe method for cleaning your home's siding, roof, and other delicate surfaces. Using high pressure on siding can force water behind panels and cause damage. We use the right method for every surface.",
       },
       {
         q: "Do you offer one-time services or recurring maintenance plans?",
@@ -84,7 +84,7 @@ const faqCategories = [
       },
       {
         q: "Are there any hidden fees?",
-        a: "Never. We believe in transparent, upfront pricing. Your estimate will clearly outline exactly what is included. There are no surprise fees — you'll know exactly what you're paying before we begin.",
+        a: "Never. We believe in transparent, upfront pricing. Your estimate will clearly outline exactly what is included. There are no surprise fees, you'll know exactly what you're paying before we begin.",
       },
       {
         q: "What payment methods do you accept?",
@@ -92,7 +92,7 @@ const faqCategories = [
       },
       {
         q: "Why should I pay for professional cleaning instead of doing it myself?",
-        a: "Professional exterior cleaning delivers significantly better and longer-lasting results than DIY methods. We use commercial-grade equipment, proper techniques, and the right products for each surface. Improper DIY cleaning can also cause damage — using too much pressure on siding, for example, can void warranties and lead to costly repairs. Our rates are competitive, and the quality speaks for itself.",
+        a: "Professional exterior cleaning delivers significantly better and longer-lasting results than DIY methods. We use commercial-grade equipment, proper techniques, and the right products for each surface. Improper DIY cleaning can also cause damage, using too much pressure on siding, for example, can void warranties and lead to costly repairs. Our rates are competitive, and the quality speaks for itself.",
       },
     ],
   },
@@ -125,7 +125,7 @@ const faqCategories = [
         a: "Yes. We serve all of Long Island, covering both Nassau and Suffolk Counties. Our team travels throughout the island to serve homeowners in every community.",
       },
       {
-        q: "I live in a smaller town on Long Island — do you service my area?",
+        q: "I live in a smaller town on Long Island, do you service my area?",
         a: "Likely yes. While our primary service areas include Huntington, Babylon, Islip, Smithtown, Hempstead, Oyster Bay, and Brookhaven, we serve many smaller communities throughout Long Island as well. Contact us with your location and we'll confirm availability.",
       },
       {

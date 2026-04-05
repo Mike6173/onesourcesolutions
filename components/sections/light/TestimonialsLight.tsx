@@ -1,5 +1,5 @@
 import { Star, Quote } from "lucide-react";
-import SectionHeader from "@/components/ui/SectionHeader";
+import SectionHeaderLight from "@/components/ui/light/SectionHeaderLight";
 
 const reviews = [
   {
@@ -40,11 +40,11 @@ const reviews = [
   },
 ];
 
-export default function Testimonials() {
+export default function TestimonialsLight() {
   return (
-    <section className="py-20 lg:py-28 bg-navy-light section-divider">
+    <section className="py-20 lg:py-28 bg-white border-t border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionHeader
+        <SectionHeaderLight
           eyebrow="What Customers Say"
           title="Trusted by Long Island Homeowners"
           subtitle="Don't take our word for it. Here's what our customers across Long Island have to say about working with One Source Solutions."
@@ -54,7 +54,7 @@ export default function Testimonials() {
           {reviews.map((review, i) => (
             <div
               key={i}
-              className="bg-navy-card border border-navy-border rounded-2xl p-6 flex flex-col hover:border-electric/20 transition-colors duration-200"
+              className="bg-white border border-gray-200 rounded-2xl p-6 flex flex-col hover:border-blue-400 hover:shadow-lg hover:shadow-blue-800/5 transition-all duration-200"
             >
               <div className="flex items-center justify-between mb-4">
                 <div className="flex">
@@ -62,14 +62,14 @@ export default function Testimonials() {
                     <Star key={j} className="w-4 h-4 text-yellow-400 fill-yellow-400" />
                   ))}
                 </div>
-                <Quote className="w-6 h-6 text-electric/30" />
+                <Quote className="w-6 h-6 text-blue-300" />
               </div>
-              <p className="text-silver text-sm leading-relaxed flex-1 mb-5">
-                "{review.text}"
+              <p className="text-gray-600 text-sm leading-relaxed flex-1 mb-5">
+                &ldquo;{review.text}&rdquo;
               </p>
-              <div className="border-t border-navy-border pt-4">
-                <div className="font-semibold text-white text-sm">{review.name}</div>
-                <div className="text-silver text-xs mt-0.5">{review.location}</div>
+              <div className="border-t border-gray-100 pt-4">
+                <div className="font-semibold text-gray-900 text-sm">{review.name}</div>
+                <div className="text-gray-500 text-xs mt-0.5">{review.location}</div>
               </div>
             </div>
           ))}

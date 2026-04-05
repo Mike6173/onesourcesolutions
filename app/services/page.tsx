@@ -65,7 +65,7 @@ export default function ServicesPage() {
             Professional Exterior Cleaning Services on Long Island
           </h1>
           <p className="text-silver text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
-            Everything your home's exterior needs — from one trusted, locally owned source. Expert results, transparent pricing, and satisfaction guaranteed.
+            Everything your home's exterior needs, from one trusted, locally owned source. Expert results, transparent pricing, and satisfaction guaranteed.
           </p>
           <CTAButton href="/contact" variant="primary" size="lg">Get a Free Estimate</CTAButton>
         </div>
@@ -117,7 +117,7 @@ export default function ServicesPage() {
                     </div>
                     <p className="text-silver text-sm leading-relaxed mb-6">
                       {service.slug === "power-washing" && "Remove years of built-up dirt, stains, algae, and grime from concrete, brick, wood, and stone surfaces. Our power washing service restores your property's hardscaping to like-new condition."}
-                      {service.slug === "soft-house-washing" && "Protect your investment with our low-pressure house washing that safely removes mold, mildew, and algae from your siding — without the risk of damage from excessive pressure."}
+                      {service.slug === "soft-house-washing" && "Protect your investment with our low-pressure house washing that safely removes mold, mildew, and algae from your siding, without the risk of damage from excessive pressure."}
                       {service.slug === "gutter-cleaning" && "Don't wait for water damage to tell you your gutters are clogged. Our professional gutter cleaning keeps your drainage system working properly, protecting your home year-round."}
                       {service.slug === "window-cleaning" && "Let natural light back into your home with our streak-free window cleaning service. We clean every pane, frame, sill, and screen for a complete, polished result."}
                     </p>

@@ -28,12 +28,12 @@ export default function SoftHouseWashingPage() {
         intro="Give your home's exterior the gentle, deep clean it deserves. Our professional soft house washing service safely removes mold, mildew, algae, and grime from your siding without the risk of damage that high-pressure washing can cause."
         description={[
           "Soft house washing is the industry-preferred method for cleaning your home's exterior siding. Unlike traditional power washing, soft washing uses low-pressure water combined with biodegradable cleaning solutions to safely and thoroughly clean vinyl, wood, stucco, brick, and painted surfaces.",
-          "The cleaning solutions we use are specifically formulated to kill mold, mildew, algae, bacteria, and other biological growth at the source — not just spray it away. This means your home stays cleaner for longer compared to high-pressure methods alone.",
-          "Long Island homeowners deal with unique environmental challenges — the coastal humidity, seasonal moisture, and abundant tree cover create ideal conditions for mold and algae growth on home exteriors. Without regular soft washing, this biological growth can stain and deteriorate your siding over time.",
+          "The cleaning solutions we use are specifically formulated to kill mold, mildew, algae, bacteria, and other biological growth at the source, not just spray it away. This means your home stays cleaner for longer compared to high-pressure methods alone.",
+          "Long Island homeowners deal with unique environmental challenges, the coastal humidity, seasonal moisture, and abundant tree cover create ideal conditions for mold and algae growth on home exteriors. Without regular soft washing, this biological growth can stain and deteriorate your siding over time.",
           "Our soft house washing service is safe for all common siding types, your landscaping, windows, and surrounding surfaces. We take every precaution to protect your property while delivering a thorough, professional clean.",
         ]}
         benefits={[
-          "Safe for all siding types — vinyl, wood, stucco, brick, Hardie board, and more",
+          "Safe for all siding types, vinyl, wood, stucco, brick, Hardie board, and more",
           "Removes mold, mildew, and algae that can cause long-term siding damage",
           "Biodegradable solutions that are safe for your family, pets, and landscaping",
           "Results last longer than high-pressure washing alone",
@@ -58,7 +58,7 @@ export default function SoftHouseWashingPage() {
           "Complete exterior coverage including trim, soffits, and gutters",
           "Safe for all common Long Island home siding types",
           "Fully insured with clear, upfront pricing",
-          "Results that last — keeping your home looking clean for longer",
+          "Results that last, keeping your home looking clean for longer",
         ]}
         faqs={[
           {
@@ -79,7 +79,7 @@ export default function SoftHouseWashingPage() {
           },
           {
             q: "Do you clean the entire exterior or just the siding panels?",
-            a: "We clean the full exterior of your home — siding, trim, soffits, fascia, and other visible surfaces. We want your entire home to look consistently clean.",
+            a: "We clean the full exterior of your home, siding, trim, soffits, fascia, and other visible surfaces. We want your entire home to look consistently clean.",
           },
           {
             q: "How much does soft house washing cost on Long Island?",

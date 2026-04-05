@@ -28,7 +28,7 @@ export default function Footer() {
               />
             </Link>
             <p className="text-silver text-sm leading-relaxed mb-6">
-              Long Island's trusted exterior cleaning company. Expert power washing, soft washing, gutter cleaning, and window cleaning — delivered with reliability and precision.
+              Long Island's trusted exterior cleaning company. Expert power washing, soft washing, gutter cleaning, and window cleaning, delivered with reliability and precision.
             </p>
             <div className="space-y-3">
               <a

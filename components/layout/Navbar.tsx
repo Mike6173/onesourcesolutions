@@ -146,6 +146,15 @@ export default function Navbar() {
               <Link href="/contact" className="text-silver hover:text-white transition-colors duration-150 text-sm font-medium link-underline">
                 Contact Us
               </Link>
+
+              {/* Light theme previews */}
+              <div className="w-px h-4 bg-navy-border" />
+              <Link href="/home-light" className="text-electric hover:text-electric-light transition-colors duration-150 text-sm font-medium">
+                Home (Light)
+              </Link>
+              <Link href="/contact-light" className="text-electric hover:text-electric-light transition-colors duration-150 text-sm font-medium">
+                Contact (Light)
+              </Link>
             </div>
 
             {/* Desktop CTA */}
@@ -246,6 +255,25 @@ export default function Navbar() {
                   key={link.href}
                   href={link.href}
                   className="block px-4 py-3 text-silver hover:text-white hover:bg-navy-light rounded-lg transition-colors duration-150 font-medium"
+                  onClick={() => setMobileOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              ))}
+
+              {/* Light theme previews */}
+              <div className="h-px bg-navy-border my-3 mx-4" />
+              <div className="px-4 mb-1">
+                <span className="text-electric text-xs font-semibold uppercase tracking-wider">Light Theme</span>
+              </div>
+              {[
+                { href: "/home-light", label: "Home (Light)" },
+                { href: "/contact-light", label: "Contact (Light)" },
+              ].map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="block px-4 py-3 text-electric hover:text-electric-light hover:bg-navy-light rounded-lg transition-colors duration-150 font-medium text-sm"
                   onClick={() => setMobileOpen(false)}
                 >
                   {link.label}

@@ -6,7 +6,7 @@ import { buildMetadata } from "@/lib/seo";
 import Link from "next/link";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Contact Us — Get a Free Estimate",
+  title: "Contact Us, Get a Free Estimate",
   description:
     "Contact One Source Solutions for a free exterior cleaning estimate on Long Island. Power washing, soft washing, gutter cleaning, and window cleaning. Serving Nassau & Suffolk County.",
   path: "/contact",

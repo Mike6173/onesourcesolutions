@@ -25,11 +25,11 @@ export default function PowerWashingPage() {
         name="Power Washing"
         slug="power-washing"
         headline="Professional Power Washing on Long Island, NY"
-        intro="Restore the beauty of your home's exterior surfaces with precision power washing from One Source Solutions. We remove years of dirt, grime, algae, and stains — leaving your property looking clean, fresh, and renewed."
+        intro="Restore the beauty of your home's exterior surfaces with precision power washing from One Source Solutions. We remove years of dirt, grime, algae, and stains, leaving your property looking clean, fresh, and renewed."
         description={[
           "Power washing, also known as pressure washing, uses high-pressure water to blast away built-up dirt, mold, mildew, algae, oil stains, and debris from hard surfaces. It's one of the most effective ways to restore the appearance of your home's exterior.",
-          "At One Source Solutions, our power washing service covers everything from concrete driveways and asphalt to wooden decks, brick patios, stone walkways, and more. We use professional-grade equipment and calibrate the pressure to suit each specific surface — ensuring a thorough clean without causing damage.",
-          "Long Island's climate means homes are constantly exposed to moisture, humidity, and seasonal debris that accumulate over time. Regular power washing doesn't just improve curb appeal — it also protects your surfaces from the premature wear that comes with neglecting built-up grime.",
+          "At One Source Solutions, our power washing service covers everything from concrete driveways and asphalt to wooden decks, brick patios, stone walkways, and more. We use professional-grade equipment and calibrate the pressure to suit each specific surface, ensuring a thorough clean without causing damage.",
+          "Long Island's climate means homes are constantly exposed to moisture, humidity, and seasonal debris that accumulate over time. Regular power washing doesn't just improve curb appeal, it also protects your surfaces from the premature wear that comes with neglecting built-up grime.",
           "Whether you're preparing your home for sale, hosting an event, or simply maintaining your property's value, our power washing service delivers results you can see immediately.",
         ]}
         benefits={[
@@ -38,8 +38,8 @@ export default function PowerWashingPage() {
           "Protects your property investment by extending the life of surfaces",
           "Prepares surfaces properly for staining, sealing, or painting projects",
           "Eliminates oil, grease, and rust stains from driveways and garage floors",
-          "Safe for the environment — no harsh chemicals required for most surfaces",
-          "Fast results — most jobs are completed in a matter of hours",
+          "Safe for the environment, no harsh chemicals required for most surfaces",
+          "Fast results, most jobs are completed in a matter of hours",
           "Increases property value and makes a great impression on neighbors and visitors",
         ]}
         signsNeeded={[
@@ -48,7 +48,7 @@ export default function PowerWashingPage() {
           "Your deck or patio looks grey and weathered instead of clean and bright",
           "You're planning to stain, seal, or paint a surface and need proper preparation",
           "Your fencing has visible dirt, mildew, or discoloration",
-          "Your property just looks dull and dirty — not as sharp as the neighbors",
+          "Your property just looks dull and dirty, not as sharp as the neighbors",
           "You're getting ready to list your home for sale",
           "It's been more than a year since any exterior surface was cleaned",
         ]}
@@ -56,7 +56,7 @@ export default function PowerWashingPage() {
           "Properly calibrated pressure settings for each surface type",
           "Professional-grade equipment for superior, lasting results",
           "Experienced crew that protects surrounding landscaping and property",
-          "Serving all of Long Island — Nassau and Suffolk County",
+          "Serving all of Long Island, Nassau and Suffolk County",
           "Fully insured with transparent, upfront pricing",
           "Satisfaction guaranteed on every job",
         ]}

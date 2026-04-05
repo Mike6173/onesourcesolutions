@@ -33,6 +33,11 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="max-w-3xl">
+          {/* Company Name */}
+          <p className="text-electric text-2xl sm:text-3xl font-bold tracking-tight mb-4">
+            One Source Solutions
+          </p>
+
           {/* Eyebrow */}
           <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-electric/10 border border-electric/20 rounded-full">
             <MapPin className="w-3.5 h-3.5 text-electric" />

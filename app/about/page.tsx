@@ -16,7 +16,7 @@ export const metadata: Metadata = buildMetadata({
 });
 
 const values = [
-  { icon: <Shield className="w-5 h-5 text-electric" />, title: "Integrity", desc: "We operate with full transparency — honest pricing, honest timelines, and honest results." },
+  { icon: <Shield className="w-5 h-5 text-electric" />, title: "Integrity", desc: "We operate with full transparency, honest pricing, honest timelines, and honest results." },
   { icon: <Star className="w-5 h-5 text-electric" />, title: "Quality", desc: "We never cut corners. Every job is completed to the highest standard, no exceptions." },
   { icon: <Users className="w-5 h-5 text-electric" />, title: "Community", desc: "We're Long Island locals. Giving back to the communities we serve is important to us." },
   { icon: <Clock className="w-5 h-5 text-electric" />, title: "Reliability", desc: "We show up on time, communicate clearly, and deliver exactly what we promise." },
@@ -56,13 +56,13 @@ export default function AboutPage() {
                   One Source Solutions was founded right here on Long Island with a simple mission: to give homeowners access to truly professional exterior cleaning that they could rely on, time and time again.
                 </p>
                 <p>
-                  We saw a gap in the market — too many services that showed up unprepared, used the wrong techniques, or simply didn't care about the results. We set out to do things differently.
+                  We saw a gap in the market, too many services that showed up unprepared, used the wrong techniques, or simply didn't care about the results. We set out to do things differently.
                 </p>
                 <p>
                   Today, we serve homeowners across Nassau and Suffolk Counties with the same commitment to quality and professionalism that we started with. Every driveway, every siding panel, every gutter, and every window gets our full attention.
                 </p>
                 <p>
-                  We take pride in what we do — and it shows in every job we complete.
+                  We take pride in what we do, and it shows in every job we complete.
                 </p>
               </div>
             </div>
@@ -99,7 +99,7 @@ export default function AboutPage() {
           <SectionHeader
             eyebrow="Our Mission"
             title="What We Stand For"
-            subtitle="Our values aren't just words — they're the way we operate on every single job, with every single customer."
+            subtitle="Our values aren't just words, they're the way we operate on every single job, with every single customer."
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map((v, i) => (
@@ -132,9 +132,9 @@ export default function AboutPage() {
                   "Fully licensed and insured for your complete protection",
                   "Professional-grade equipment for superior results",
                   "Proper techniques that protect your property from damage",
-                  "Transparent, upfront pricing — no surprises",
+                  "Transparent, upfront pricing, no surprises",
                   "Reliable scheduling with clear communication",
-                  "Locally owned — we care about our community",
+                  "Locally owned, we care about our community",
                   "Satisfaction guaranteed on every service",
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">

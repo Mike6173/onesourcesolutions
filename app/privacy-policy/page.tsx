@@ -4,7 +4,7 @@ import { BUSINESS } from "@/lib/constants";
 
 export const metadata: Metadata = buildMetadata({
   title: "Privacy Policy",
-  description: "Privacy Policy for One Source Solutions — Long Island exterior cleaning company.",
+  description: "Privacy Policy for One Source Solutions, Long Island exterior cleaning company.",
   path: "/privacy-policy",
   noIndex: true,
 });

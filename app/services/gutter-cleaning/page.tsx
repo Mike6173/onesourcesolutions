@@ -25,11 +25,11 @@ export default function GutterCleaningPage() {
         name="Gutter Cleaning"
         slug="gutter-cleaning"
         headline="Professional Gutter Cleaning on Long Island, NY"
-        intro="Protect your home from costly water damage with thorough, professional gutter cleaning from One Source Solutions. We clear leaves, debris, and blockages — keeping your gutters flowing freely and your home protected year-round."
+        intro="Protect your home from costly water damage with thorough, professional gutter cleaning from One Source Solutions. We clear leaves, debris, and blockages, keeping your gutters flowing freely and your home protected year-round."
         description={[
           "Your gutters are your home's first line of defense against water damage. When leaves, twigs, and debris build up, water can no longer flow freely. The result? Overflow, pooling, foundation damage, and even structural deterioration over time.",
           "At One Source Solutions, our professional gutter cleaning service removes all debris from your gutters and downspouts, ensuring water can move away from your home efficiently. We perform a full inspection during every visit and alert you to any potential issues before they become expensive problems.",
-          "Long Island's tree-heavy neighborhoods mean gutters fill up fast — especially in the fall. Experts recommend cleaning gutters at least twice a year, and homes surrounded by trees may need cleaning 3–4 times annually. Don't wait for overflow damage — stay ahead of it with regular professional cleaning.",
+          "Long Island's tree-heavy neighborhoods mean gutters fill up fast, especially in the fall. Experts recommend cleaning gutters at least twice a year, and homes surrounded by trees may need cleaning 3–4 times annually. Don't wait for overflow damage, stay ahead of it with regular professional cleaning.",
           "Beyond just removing debris, we flush your downspouts to ensure they're completely clear, and we can identify early signs of gutter damage, sagging, or improper pitch that could lead to future water problems.",
         ]}
         benefits={[
@@ -56,14 +56,14 @@ export default function GutterCleaningPage() {
           "Thorough removal of all leaves, debris, and blockages",
           "Downspout flushing included on every service",
           "Inspection for damage, sagging, and drainage issues",
-          "Safe, professional access — no risks to you or your property",
+          "Safe, professional access, no risks to you or your property",
           "Serving all of Long Island, Nassau and Suffolk County",
           "Fully insured, transparent pricing, and guaranteed work",
         ]}
         faqs={[
           {
             q: "How often should I have my gutters cleaned on Long Island?",
-            a: "We recommend cleaning gutters at least twice a year — once in late spring and once in late fall after leaves have dropped. Homes with nearby deciduous trees may need more frequent cleaning, up to 3–4 times per year.",
+            a: "We recommend cleaning gutters at least twice a year, once in late spring and once in late fall after leaves have dropped. Homes with nearby deciduous trees may need more frequent cleaning, up to 3–4 times per year.",
           },
           {
             q: "What's included in your gutter cleaning service?",
@@ -71,7 +71,7 @@ export default function GutterCleaningPage() {
           },
           {
             q: "Can clogged gutters really damage my home?",
-            a: "Absolutely. Clogged gutters cause water to overflow and pool against your siding, fascia, and foundation. Over time, this leads to rot, mold, foundation cracks, and basement flooding — all very expensive to repair. Regular gutter cleaning is one of the best investments you can make in your home's health.",
+            a: "Absolutely. Clogged gutters cause water to overflow and pool against your siding, fascia, and foundation. Over time, this leads to rot, mold, foundation cracks, and basement flooding, all very expensive to repair. Regular gutter cleaning is one of the best investments you can make in your home's health.",
           },
           {
             q: "Do you clean gutters on two-story homes?",

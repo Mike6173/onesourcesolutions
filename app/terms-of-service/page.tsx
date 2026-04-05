@@ -4,7 +4,7 @@ import { BUSINESS } from "@/lib/constants";
 
 export const metadata: Metadata = buildMetadata({
   title: "Terms of Service",
-  description: "Terms of Service for One Source Solutions — Long Island exterior cleaning company.",
+  description: "Terms of Service for One Source Solutions, Long Island exterior cleaning company.",
   path: "/terms-of-service",
   noIndex: true,
 });
