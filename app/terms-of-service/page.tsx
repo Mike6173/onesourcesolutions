@@ -13,7 +13,7 @@ export default function TermsPage() {
   return (
     <section className="pt-32 pb-20 bg-navy-light min-h-screen">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-3xl sm:text-4xl font-bold text-white mb-3">Terms of Service</h1>
+        <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-3">Terms of Service</h1>
         <p className="text-silver text-sm mb-10">Last updated: {new Date().getFullYear()}</p>
 
         <div className="space-y-8">
@@ -52,7 +52,7 @@ export default function TermsPage() {
             },
           ].map((section) => (
             <div key={section.title}>
-              <h2 className="text-xl font-bold text-white mb-3">{section.title}</h2>
+              <h2 className="text-xl font-bold text-gray-900 mb-3">{section.title}</h2>
               <p className="text-silver leading-relaxed">{section.content}</p>
             </div>
           ))}

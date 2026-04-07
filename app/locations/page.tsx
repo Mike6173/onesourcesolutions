@@ -24,7 +24,7 @@ export default function LocationsPage() {
           <span className="inline-block text-electric text-xs font-semibold uppercase tracking-widest mb-4 px-3 py-1 bg-electric/10 rounded-full border border-electric/20">
             Service Areas
           </span>
-          <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight mb-5">
+          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 leading-tight mb-5">
             Exterior Cleaning Services Across Long Island
           </h1>
           <p className="text-silver text-lg leading-relaxed max-w-2xl mx-auto">
@@ -53,7 +53,7 @@ export default function LocationsPage() {
                     <MapPin className="w-5 h-5 text-electric" />
                   </div>
                   <div>
-                    <div className="text-white font-semibold">{loc.name}</div>
+                    <div className="text-gray-900 font-semibold">{loc.name}</div>
                     <div className="text-silver text-xs">{loc.county} County, NY</div>
                   </div>
                 </div>
@@ -93,7 +93,7 @@ export default function LocationsPage() {
                 <Link
                   key={town}
                   href={`/locations/${loc.slug}`}
-                  className="flex items-center gap-1.5 bg-navy-card border border-navy-border rounded-lg px-3 py-2.5 text-silver hover:text-white hover:border-electric/40 transition-all duration-150 text-sm"
+                  className="flex items-center gap-1.5 bg-navy-card border border-navy-border rounded-lg px-3 py-2.5 text-silver hover:text-gray-900 hover:border-electric/40 transition-all duration-150 text-sm"
                 >
                   <MapPin className="w-3 h-3 text-electric flex-shrink-0" />
                   {town}
@@ -118,7 +118,7 @@ export default function LocationsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <span className="inline-block text-electric text-xs font-semibold uppercase tracking-widest mb-3">Why Local Matters</span>
-              <h2 className="text-3xl font-bold text-white mb-5">The Value of Hiring a Local Long Island Company</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-5">The Value of Hiring a Local Long Island Company</h2>
               <div className="space-y-4 text-silver leading-relaxed">
                 <p>When you hire One Source Solutions, you're working with a team that lives and operates right here on Long Island. We understand the local climate, the types of homes in your neighborhood, and the specific challenges that Long Island homeowners face.</p>
                 <p>Coastal moisture, heavy pollen seasons, and the kind of tree coverage common in Nassau and Suffolk Counties all contribute to faster buildup of mold, algae, and grime. We know how to address these conditions because we deal with them every day.</p>
@@ -133,7 +133,7 @@ export default function LocationsPage() {
                 { title: "Supporting Local", desc: "Your investment stays in the Long Island community when you hire local." },
               ].map((item, i) => (
                 <div key={i} className="bg-navy-card border border-navy-border rounded-xl p-5">
-                  <h3 className="text-white font-semibold text-sm mb-2">{item.title}</h3>
+                  <h3 className="text-gray-900 font-semibold text-sm mb-2">{item.title}</h3>
                   <p className="text-silver text-xs leading-relaxed">{item.desc}</p>
                 </div>
               ))}

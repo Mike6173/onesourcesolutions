@@ -7,6 +7,8 @@ const serviceImages: Record<string, string> = {
   "soft-house-washing": "/images/soft-house-washing.jpg",
   "gutter-cleaning": "/images/gutter-cleaning.jpg",
   "window-cleaning": "/images/window-cleaning.jpg",
+  "janitorial-services": "/images/janitorial-services.jpg",
+  "floor-cleaning": "/images/floor-cleaning.jpg",
 };
 
 interface ServiceCardProps {
@@ -35,7 +37,7 @@ export default function ServiceCard({ slug, name, shortDesc, icon }: ServiceCard
         </div>
       </div>
       <div className="p-5">
-        <h3 className="text-white font-semibold text-lg mb-2 group-hover:text-electric transition-colors duration-200">
+        <h3 className="text-gray-900 font-semibold text-lg mb-2 group-hover:text-electric transition-colors duration-200">
           {name}
         </h3>
         <p className="text-silver text-sm leading-relaxed mb-4">{shortDesc}</p>

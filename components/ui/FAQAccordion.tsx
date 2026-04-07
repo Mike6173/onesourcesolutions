@@ -36,7 +36,7 @@ export default function FAQAccordion({ items }: FAQAccordionProps) {
             <span
               className={clsx(
                 "font-medium text-sm sm:text-base transition-colors duration-200",
-                openIndex === i ? "text-white" : "text-silver-light"
+                openIndex === i ? "text-gray-900" : "text-silver-light"
               )}
             >
               {item.q}

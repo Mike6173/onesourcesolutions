@@ -12,6 +12,8 @@ import {
   Droplets,
   Sparkles,
   Phone,
+  Building2,
+  Layers,
 } from "lucide-react";
 import { BUSINESS, SERVICES } from "@/lib/constants";
 import clsx from "clsx";
@@ -21,6 +23,8 @@ const serviceIcons: Record<string, React.ReactNode> = {
   "soft-house-washing": <Home className="w-4 h-4 text-electric" />,
   "gutter-cleaning": <Droplets className="w-4 h-4 text-electric" />,
   "window-cleaning": <Sparkles className="w-4 h-4 text-electric" />,
+  "janitorial-services": <Building2 className="w-4 h-4 text-electric" />,
+  "floor-cleaning": <Layers className="w-4 h-4 text-electric" />,
 };
 
 export default function Navbar() {
@@ -61,7 +65,7 @@ export default function Navbar() {
         className={clsx(
           "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
           scrolled
-            ? "bg-navy/95 backdrop-blur-md shadow-lg shadow-black/20 border-b border-navy-border"
+            ? "bg-white/95 backdrop-blur-md shadow-lg shadow-gray-200/50 border-b border-navy-border"
             : "bg-transparent"
         )}
       >
@@ -81,10 +85,10 @@ export default function Navbar() {
 
             {/* Desktop Nav */}
             <div className="hidden lg:flex items-center gap-8">
-              <Link href="/" className="text-silver hover:text-white transition-colors duration-150 text-sm font-medium link-underline">
+              <Link href="/" className="text-gray-600 hover:text-gray-900 transition-colors duration-150 text-sm font-medium link-underline">
                 Home
               </Link>
-              <Link href="/about" className="text-silver hover:text-white transition-colors duration-150 text-sm font-medium link-underline">
+              <Link href="/about" className="text-gray-600 hover:text-gray-900 transition-colors duration-150 text-sm font-medium link-underline">
                 About
               </Link>
 
@@ -93,7 +97,7 @@ export default function Navbar() {
                 <button
                   onClick={() => setServicesOpen(!servicesOpen)}
                   onMouseEnter={() => setServicesOpen(true)}
-                  className="flex items-center gap-1 text-silver hover:text-white transition-colors duration-150 text-sm font-medium"
+                  className="flex items-center gap-1 text-gray-600 hover:text-gray-900 transition-colors duration-150 text-sm font-medium"
                   aria-expanded={servicesOpen}
                   aria-haspopup="true"
                 >
@@ -104,7 +108,7 @@ export default function Navbar() {
                 {servicesOpen && (
                   <div
                     onMouseLeave={() => setServicesOpen(false)}
-                    className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-64 bg-navy-card border border-navy-border rounded-xl shadow-2xl shadow-black/40 overflow-hidden"
+                    className="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-64 bg-navy-card border border-navy-border rounded-xl shadow-2xl shadow-gray-300/40 overflow-hidden"
                   >
                     <div className="p-2">
                       {SERVICES.map((service) => (
@@ -118,8 +122,8 @@ export default function Navbar() {
                             {serviceIcons[service.slug]}
                           </span>
                           <div>
-                            <div className="text-white text-sm font-medium">{service.name}</div>
-                            <div className="text-silver text-xs leading-snug mt-0.5 line-clamp-1">{service.shortDesc}</div>
+                            <div className="text-gray-900 text-sm font-medium">{service.name}</div>
+                            <div className="text-gray-600 text-xs leading-snug mt-0.5 line-clamp-1">{service.shortDesc}</div>
                           </div>
                         </Link>
                       ))}
@@ -137,23 +141,14 @@ export default function Navbar() {
                 )}
               </div>
 
-              <Link href="/locations" className="text-silver hover:text-white transition-colors duration-150 text-sm font-medium link-underline">
+              <Link href="/locations" className="text-gray-600 hover:text-gray-900 transition-colors duration-150 text-sm font-medium link-underline">
                 Locations
               </Link>
-              <Link href="/faq" className="text-silver hover:text-white transition-colors duration-150 text-sm font-medium link-underline">
+              <Link href="/faq" className="text-gray-600 hover:text-gray-900 transition-colors duration-150 text-sm font-medium link-underline">
                 FAQ
               </Link>
-              <Link href="/contact" className="text-silver hover:text-white transition-colors duration-150 text-sm font-medium link-underline">
+              <Link href="/contact" className="text-gray-600 hover:text-gray-900 transition-colors duration-150 text-sm font-medium link-underline">
                 Contact Us
-              </Link>
-
-              {/* Light theme previews */}
-              <div className="w-px h-4 bg-navy-border" />
-              <Link href="/home-light" className="text-electric hover:text-electric-light transition-colors duration-150 text-sm font-medium">
-                Home (Light)
-              </Link>
-              <Link href="/contact-light" className="text-electric hover:text-electric-light transition-colors duration-150 text-sm font-medium">
-                Contact (Light)
               </Link>
             </div>
 
@@ -161,7 +156,7 @@ export default function Navbar() {
             <div className="hidden lg:flex items-center gap-3">
               <a
                 href={BUSINESS.phoneHref}
-                className="flex items-center gap-2 text-silver hover:text-white transition-colors duration-150 text-sm font-medium"
+                className="flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors duration-150 text-sm font-medium"
               >
                 <Phone className="w-4 h-4 text-electric" />
                 {BUSINESS.phone}
@@ -177,7 +172,7 @@ export default function Navbar() {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="lg:hidden text-silver hover:text-white transition-colors p-2 -mr-2"
+              className="lg:hidden text-gray-600 hover:text-gray-900 transition-colors p-2 -mr-2"
               aria-label={mobileOpen ? "Close menu" : "Open menu"}
             >
               {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -189,11 +184,11 @@ export default function Navbar() {
       {/* Mobile Menu Overlay */}
       {mobileOpen && (
         <div className="fixed inset-0 z-40 lg:hidden">
-          <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" onClick={() => setMobileOpen(false)} />
+          <div className="absolute inset-0 bg-black/30 backdrop-blur-sm" onClick={() => setMobileOpen(false)} />
           <div className="absolute top-0 right-0 bottom-0 w-80 max-w-[90vw] bg-navy-card border-l border-navy-border flex flex-col">
             <div className="flex items-center justify-between px-6 py-5 border-b border-navy-border">
               <Image src={BUSINESS.logo} alt="One Source Solutions" width={140} height={38} className="h-10 w-auto" />
-              <button onClick={() => setMobileOpen(false)} className="text-silver hover:text-white p-1">
+              <button onClick={() => setMobileOpen(false)} className="text-gray-600 hover:text-gray-900 p-1">
                 <X className="w-6 h-6" />
               </button>
             </div>
@@ -206,7 +201,7 @@ export default function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="block px-4 py-3 text-silver hover:text-white hover:bg-navy-light rounded-lg transition-colors duration-150 font-medium"
+                  className="block px-4 py-3 text-gray-600 hover:text-gray-900 hover:bg-navy-light rounded-lg transition-colors duration-150 font-medium"
                   onClick={() => setMobileOpen(false)}
                 >
                   {link.label}
@@ -217,7 +212,7 @@ export default function Navbar() {
               <div>
                 <button
                   onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
-                  className="w-full flex items-center justify-between px-4 py-3 text-silver hover:text-white hover:bg-navy-light rounded-lg transition-colors duration-150 font-medium"
+                  className="w-full flex items-center justify-between px-4 py-3 text-gray-600 hover:text-gray-900 hover:bg-navy-light rounded-lg transition-colors duration-150 font-medium"
                 >
                   Services
                   <ChevronDown className={clsx("w-4 h-4 transition-transform duration-200", mobileServicesOpen && "rotate-180")} />
@@ -228,7 +223,7 @@ export default function Navbar() {
                       <Link
                         key={service.slug}
                         href={`/services/${service.slug}`}
-                        className="flex items-center gap-2 px-3 py-2.5 text-silver hover:text-white hover:bg-navy-light rounded-lg transition-colors duration-150 text-sm"
+                        className="flex items-center gap-2 px-3 py-2.5 text-gray-600 hover:text-gray-900 hover:bg-navy-light rounded-lg transition-colors duration-150 text-sm"
                         onClick={() => setMobileOpen(false)}
                       >
                         {serviceIcons[service.slug]}
@@ -254,26 +249,7 @@ export default function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="block px-4 py-3 text-silver hover:text-white hover:bg-navy-light rounded-lg transition-colors duration-150 font-medium"
-                  onClick={() => setMobileOpen(false)}
-                >
-                  {link.label}
-                </Link>
-              ))}
-
-              {/* Light theme previews */}
-              <div className="h-px bg-navy-border my-3 mx-4" />
-              <div className="px-4 mb-1">
-                <span className="text-electric text-xs font-semibold uppercase tracking-wider">Light Theme</span>
-              </div>
-              {[
-                { href: "/home-light", label: "Home (Light)" },
-                { href: "/contact-light", label: "Contact (Light)" },
-              ].map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="block px-4 py-3 text-electric hover:text-electric-light hover:bg-navy-light rounded-lg transition-colors duration-150 font-medium text-sm"
+                  className="block px-4 py-3 text-gray-600 hover:text-gray-900 hover:bg-navy-light rounded-lg transition-colors duration-150 font-medium"
                   onClick={() => setMobileOpen(false)}
                 >
                   {link.label}
@@ -284,7 +260,7 @@ export default function Navbar() {
             <div className="px-4 py-6 border-t border-navy-border space-y-3">
               <a
                 href={BUSINESS.phoneHref}
-                className="flex items-center justify-center gap-2 w-full py-3 border border-navy-border rounded-lg text-white font-medium hover:border-electric/50 transition-colors duration-150"
+                className="flex items-center justify-center gap-2 w-full py-3 border border-navy-border rounded-lg text-gray-900 font-medium hover:border-electric/50 transition-colors duration-150"
               >
                 <Phone className="w-4 h-4 text-electric" />
                 {BUSINESS.phone}

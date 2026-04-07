@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { Zap, Home, Droplets, Sparkles, ArrowRight, CheckCircle } from "lucide-react";
+import { Zap, Home, Droplets, Sparkles, Building2, Layers, ArrowRight, CheckCircle } from "lucide-react";
 import SectionHeader from "@/components/ui/SectionHeader";
 import CTAButton from "@/components/ui/CTAButton";
 import FinalCTA from "@/components/sections/FinalCTA";
@@ -13,12 +13,14 @@ const serviceImages: Record<string, string> = {
   "soft-house-washing": "/images/soft-house-washing.jpg",
   "gutter-cleaning": "/images/gutter-cleaning.jpg",
   "window-cleaning": "/images/window-cleaning.jpg",
+  "janitorial-services": "/images/janitorial-services.jpg",
+  "floor-cleaning": "/images/floor-cleaning.jpg",
 };
 
 export const metadata: Metadata = buildMetadata({
   title: "Exterior Cleaning Services Long Island, NY",
   description:
-    "One Source Solutions offers expert power washing, soft house washing, gutter cleaning, and window cleaning across Long Island. Professional results, free estimates.",
+    "One Source Solutions offers power washing, soft house washing, gutter cleaning, window cleaning, janitorial services, and floor cleaning across Long Island. Professional results, free estimates.",
   path: "/services",
 });
 
@@ -43,6 +45,16 @@ const serviceDetails = [
     icon: <Sparkles className="w-8 h-8 text-electric" />,
     benefits: ["Interior & exterior", "Screen cleaning", "Frame & sill cleaning", "Streak-free results"],
   },
+  {
+    slug: "janitorial-services",
+    icon: <Building2 className="w-8 h-8 text-electric" />,
+    benefits: ["Offices & retail", "Restrooms & common areas", "Trash & touch-point sanitizing", "Flexible schedules"],
+  },
+  {
+    slug: "floor-cleaning",
+    icon: <Layers className="w-8 h-8 text-electric" />,
+    benefits: ["Strip & refinish", "Tile & grout", "Carpet care", "Routine maintenance"],
+  },
 ];
 
 export default function ServicesPage() {
@@ -61,7 +73,7 @@ export default function ServicesPage() {
           <span className="inline-block text-electric text-xs font-semibold uppercase tracking-widest mb-4 px-3 py-1 bg-electric/10 rounded-full border border-electric/20">
             Our Services
           </span>
-          <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight mb-5">
+          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 leading-tight mb-5">
             Professional Exterior Cleaning Services on Long Island
           </h1>
           <p className="text-silver text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
@@ -84,7 +96,7 @@ export default function ServicesPage() {
                   <div className="w-14 h-14 rounded-2xl bg-electric/10 border border-electric/30 flex items-center justify-center mb-5">
                     {service.icon}
                   </div>
-                  <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">{service.name}</h2>
+                  <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">{service.name}</h2>
                   <p className="text-silver leading-relaxed mb-6">{service.shortDesc} Our team delivers thorough, professional results that protect and enhance your property.</p>
                   <ul className="grid grid-cols-2 gap-3 mb-7">
                     {service.benefits.map((b, j) => (
@@ -113,13 +125,15 @@ export default function ServicesPage() {
                   <div className="p-8">
                     <div className="flex items-center gap-3 mb-4">
                       {service.icon}
-                      <span className="text-white font-bold text-xl">{service.name}</span>
+                      <span className="text-gray-900 font-bold text-xl">{service.name}</span>
                     </div>
                     <p className="text-silver text-sm leading-relaxed mb-6">
                       {service.slug === "power-washing" && "Remove years of built-up dirt, stains, algae, and grime from concrete, brick, wood, and stone surfaces. Our power washing service restores your property's hardscaping to like-new condition."}
                       {service.slug === "soft-house-washing" && "Protect your investment with our low-pressure house washing that safely removes mold, mildew, and algae from your siding, without the risk of damage from excessive pressure."}
                       {service.slug === "gutter-cleaning" && "Don't wait for water damage to tell you your gutters are clogged. Our professional gutter cleaning keeps your drainage system working properly, protecting your home year-round."}
                       {service.slug === "window-cleaning" && "Let natural light back into your home with our streak-free window cleaning service. We clean every pane, frame, sill, and screen for a complete, polished result."}
+                      {service.slug === "janitorial-services" && "Keep your workplace spotless and professional with janitorial programs built around your hours and standards. From daily cleaning to deep sanitization, we help Long Island businesses maintain a healthy, welcoming environment for staff and customers."}
+                      {service.slug === "floor-cleaning" && "Protect and revitalize every floor type with expert care. Whether you need strip-and-wax for VCT, grout restoration for tile, carpet extraction, or scheduled maintenance for high-traffic areas, we deliver durable, professional results."}
                     </p>
                     <CTAButton href={`/services/${service.slug}`} variant="outline" className="w-full justify-center" arrow>
                       View Full Details

@@ -22,7 +22,7 @@ export default function ContactPage() {
           <span className="inline-block text-electric text-xs font-semibold uppercase tracking-widest mb-4 px-3 py-1 bg-electric/10 rounded-full border border-electric/20">
             Get In Touch
           </span>
-          <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight mb-5">
+          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 leading-tight mb-5">
             Request Your Free Estimate
           </h1>
           <p className="text-silver text-lg leading-relaxed max-w-xl mx-auto">
@@ -38,15 +38,15 @@ export default function ContactPage() {
             {/* Contact Info */}
             <div className="lg:col-span-2 space-y-8">
               <div>
-                <h2 className="text-xl font-bold text-white mb-5">Contact Information</h2>
+                <h2 className="text-xl font-bold text-gray-900 mb-5">Contact Information</h2>
                 <div className="space-y-5">
                   <div className="flex items-start gap-4">
                     <div className="w-10 h-10 rounded-lg bg-electric/10 flex items-center justify-center flex-shrink-0">
                       <Phone className="w-5 h-5 text-electric" />
                     </div>
                     <div>
-                      <div className="text-white font-medium text-sm mb-0.5">Phone</div>
-                      <a href={BUSINESS.phoneHref} className="text-silver hover:text-white transition-colors duration-150 text-sm">
+                      <div className="text-gray-900 font-medium text-sm mb-0.5">Phone</div>
+                      <a href={BUSINESS.phoneHref} className="text-silver hover:text-gray-900 transition-colors duration-150 text-sm">
                         {BUSINESS.phone}
                       </a>
                     </div>
@@ -56,8 +56,8 @@ export default function ContactPage() {
                       <Mail className="w-5 h-5 text-electric" />
                     </div>
                     <div>
-                      <div className="text-white font-medium text-sm mb-0.5">Email</div>
-                      <a href={BUSINESS.emailHref} className="text-silver hover:text-white transition-colors duration-150 text-sm break-all">
+                      <div className="text-gray-900 font-medium text-sm mb-0.5">Email</div>
+                      <a href={BUSINESS.emailHref} className="text-silver hover:text-gray-900 transition-colors duration-150 text-sm break-all">
                         {BUSINESS.email}
                       </a>
                     </div>
@@ -67,7 +67,7 @@ export default function ContactPage() {
                       <MapPin className="w-5 h-5 text-electric" />
                     </div>
                     <div>
-                      <div className="text-white font-medium text-sm mb-0.5">Service Area</div>
+                      <div className="text-gray-900 font-medium text-sm mb-0.5">Service Area</div>
                       <p className="text-silver text-sm">Long Island, New York<br />Nassau & Suffolk Counties</p>
                     </div>
                   </div>
@@ -76,7 +76,7 @@ export default function ContactPage() {
                       <Clock className="w-5 h-5 text-electric" />
                     </div>
                     <div>
-                      <div className="text-white font-medium text-sm mb-0.5">Hours</div>
+                      <div className="text-gray-900 font-medium text-sm mb-0.5">Hours</div>
                       <p className="text-silver text-sm">Monday – Friday: 8am – 6pm<br />Saturday: 9am – 4pm<br />Sunday: By appointment</p>
                     </div>
                   </div>
@@ -86,7 +86,7 @@ export default function ContactPage() {
               {/* Contact person */}
               <div className="bg-navy-card border border-navy-border rounded-2xl p-6">
                 <div className="text-sm text-silver mb-1">Your direct contact</div>
-                <div className="text-white font-semibold text-lg mb-3">{BUSINESS.contact}</div>
+                <div className="text-gray-900 font-semibold text-lg mb-3">{BUSINESS.contact}</div>
                 <div className="space-y-2">
                   <a href={BUSINESS.phoneHref} className="flex items-center gap-2 text-electric hover:text-electric-light text-sm transition-colors duration-150">
                     <Phone className="w-4 h-4" /> {BUSINESS.phone}
@@ -99,7 +99,7 @@ export default function ContactPage() {
 
               {/* What to expect */}
               <div>
-                <h3 className="text-white font-bold mb-4">What Happens Next?</h3>
+                <h3 className="text-gray-900 font-bold mb-4">What Happens Next?</h3>
                 <ul className="space-y-3">
                   {[
                     "We review your request within 1 business day",
@@ -120,13 +120,13 @@ export default function ContactPage() {
 
               {/* Service Areas */}
               <div>
-                <h3 className="text-white font-bold mb-4">Areas We Serve</h3>
+                <h3 className="text-gray-900 font-bold mb-4">Areas We Serve</h3>
                 <div className="flex flex-wrap gap-2">
                   {LOCATIONS.map((loc) => (
                     <Link
                       key={loc.slug}
                       href={`/locations/${loc.slug}`}
-                      className="text-xs text-silver bg-navy-card border border-navy-border rounded-full px-3 py-1.5 hover:text-white hover:border-electric/40 transition-colors duration-150"
+                      className="text-xs text-silver bg-navy-card border border-navy-border rounded-full px-3 py-1.5 hover:text-gray-900 hover:border-electric/40 transition-colors duration-150"
                     >
                       {loc.name}
                     </Link>
@@ -141,7 +141,7 @@ export default function ContactPage() {
             {/* Form */}
             <div className="lg:col-span-3">
               <div className="bg-navy-card border border-navy-border rounded-2xl p-8">
-                <h2 className="text-xl font-bold text-white mb-2">Send Us a Message</h2>
+                <h2 className="text-xl font-bold text-gray-900 mb-2">Send Us a Message</h2>
                 <p className="text-silver text-sm mb-7">All fields marked with * are required.</p>
                 <ContactForm />
               </div>
@@ -162,7 +162,7 @@ export default function ContactPage() {
             ].map((t, i) => (
               <div key={i} className="flex flex-col items-center">
                 <CheckCircle className="w-6 h-6 text-electric mb-2" />
-                <div className="text-white font-semibold text-sm mb-1">{t.label}</div>
+                <div className="text-gray-900 font-semibold text-sm mb-1">{t.label}</div>
                 <div className="text-silver text-xs">{t.sub}</div>
               </div>
             ))}

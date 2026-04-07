@@ -43,6 +43,20 @@ export const SERVICES = [
     icon: "Sparkles",
     keywords: "window cleaning Long Island, window washing Long Island",
   },
+  {
+    slug: "janitorial-services",
+    name: "Janitorial Services",
+    shortDesc: "Comprehensive janitorial solutions for commercial and industrial facilities.",
+    icon: "Building2",
+    keywords: "janitorial services Long Island, commercial cleaning Long Island",
+  },
+  {
+    slug: "floor-cleaning",
+    name: "Floor Cleaning Services",
+    shortDesc: "Professional floor care for every surface type, from routine maintenance to deep restoration.",
+    icon: "Layers",
+    keywords: "floor cleaning Long Island, floor care Long Island",
+  },
 ];
 
 export const LOCATIONS = [

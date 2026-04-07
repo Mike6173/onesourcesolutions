@@ -64,7 +64,7 @@ export default function ContactForm() {
         <div className="w-16 h-16 bg-electric/10 rounded-full flex items-center justify-center mx-auto mb-5">
           <CheckCircle className="w-8 h-8 text-electric" />
         </div>
-        <h3 className="text-white text-xl font-bold mb-2">Message Received!</h3>
+        <h3 className="text-gray-900 text-xl font-bold mb-2">Message Received!</h3>
         <p className="text-silver leading-relaxed">
           Thank you for reaching out to One Source Solutions. We'll be in touch within 1 business day to discuss your estimate.
         </p>
@@ -90,7 +90,7 @@ export default function ContactForm() {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         {/* Name */}
         <div>
-          <label htmlFor="name" className="block text-sm font-medium text-silver-light mb-1.5">
+          <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1.5">
             Full Name <span className="text-electric" aria-hidden>*</span>
           </label>
           <input
@@ -102,7 +102,7 @@ export default function ContactForm() {
             aria-invalid={!!errors.name}
             aria-describedby={errors.name ? "name-error" : undefined}
             placeholder="John Smith"
-            className="w-full bg-navy-light border border-navy-border rounded-lg px-4 py-3 text-white placeholder-silver/50 text-sm focus:border-electric focus:outline-none transition-colors duration-150 aria-[invalid=true]:border-red-500/60"
+            className="w-full bg-navy-light border border-navy-border rounded-lg px-4 py-3 text-gray-900 placeholder-silver/50 text-sm focus:border-electric focus:outline-none transition-colors duration-150 aria-[invalid=true]:border-red-500/60"
           />
           {errors.name && (
             <p id="name-error" className="mt-1.5 text-xs text-red-400" role="alert">{errors.name}</p>
@@ -111,7 +111,7 @@ export default function ContactForm() {
 
         {/* Email */}
         <div>
-          <label htmlFor="email" className="block text-sm font-medium text-silver-light mb-1.5">
+          <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1.5">
             Email Address <span className="text-electric" aria-hidden>*</span>
           </label>
           <input
@@ -123,7 +123,7 @@ export default function ContactForm() {
             aria-invalid={!!errors.email}
             aria-describedby={errors.email ? "email-error" : undefined}
             placeholder="john@example.com"
-            className="w-full bg-navy-light border border-navy-border rounded-lg px-4 py-3 text-white placeholder-silver/50 text-sm focus:border-electric focus:outline-none transition-colors duration-150 aria-[invalid=true]:border-red-500/60"
+            className="w-full bg-navy-light border border-navy-border rounded-lg px-4 py-3 text-gray-900 placeholder-silver/50 text-sm focus:border-electric focus:outline-none transition-colors duration-150 aria-[invalid=true]:border-red-500/60"
           />
           {errors.email && (
             <p id="email-error" className="mt-1.5 text-xs text-red-400" role="alert">{errors.email}</p>
@@ -133,7 +133,7 @@ export default function ContactForm() {
 
       {/* Phone */}
       <div>
-        <label htmlFor="phone" className="block text-sm font-medium text-silver-light mb-1.5">
+        <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1.5">
           Phone Number <span className="text-electric" aria-hidden>*</span>
         </label>
         <input
@@ -145,7 +145,7 @@ export default function ContactForm() {
           aria-invalid={!!errors.phone}
           aria-describedby={errors.phone ? "phone-error" : undefined}
           placeholder="(516) 555-0123"
-          className="w-full bg-navy-light border border-navy-border rounded-lg px-4 py-3 text-white placeholder-silver/50 text-sm focus:border-electric focus:outline-none transition-colors duration-150 aria-[invalid=true]:border-red-500/60"
+          className="w-full bg-navy-light border border-navy-border rounded-lg px-4 py-3 text-gray-900 placeholder-silver/50 text-sm focus:border-electric focus:outline-none transition-colors duration-150 aria-[invalid=true]:border-red-500/60"
         />
         {errors.phone && (
           <p id="phone-error" className="mt-1.5 text-xs text-red-400" role="alert">{errors.phone}</p>
@@ -154,13 +154,13 @@ export default function ContactForm() {
 
       {/* Service */}
       <div>
-        <label htmlFor="service" className="block text-sm font-medium text-silver-light mb-1.5">
+        <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-1.5">
           Service Needed
         </label>
         <select
           id="service"
           name="service"
-          className="w-full bg-navy-light border border-navy-border rounded-lg px-4 py-3 text-white text-sm focus:border-electric focus:outline-none transition-colors duration-150 appearance-none cursor-pointer"
+          className="w-full bg-navy-light border border-navy-border rounded-lg px-4 py-3 text-gray-900 text-sm focus:border-electric focus:outline-none transition-colors duration-150 appearance-none cursor-pointer"
         >
           <option value="">Select a service...</option>
           {SERVICES.map((s) => (
@@ -173,7 +173,7 @@ export default function ContactForm() {
 
       {/* Message */}
       <div>
-        <label htmlFor="message" className="block text-sm font-medium text-silver-light mb-1.5">
+        <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1.5">
           Message <span className="text-electric" aria-hidden>*</span>
         </label>
         <textarea
@@ -184,7 +184,7 @@ export default function ContactForm() {
           aria-invalid={!!errors.message}
           aria-describedby={errors.message ? "message-error" : undefined}
           placeholder="Tell us about your property and what you need cleaned..."
-          className="w-full bg-navy-light border border-navy-border rounded-lg px-4 py-3 text-white placeholder-silver/50 text-sm focus:border-electric focus:outline-none transition-colors duration-150 resize-y min-h-[120px] aria-[invalid=true]:border-red-500/60"
+          className="w-full bg-navy-light border border-navy-border rounded-lg px-4 py-3 text-gray-900 placeholder-silver/50 text-sm focus:border-electric focus:outline-none transition-colors duration-150 resize-y min-h-[120px] aria-[invalid=true]:border-red-500/60"
         />
         {errors.message && (
           <p id="message-error" className="mt-1.5 text-xs text-red-400" role="alert">{errors.message}</p>

@@ -33,7 +33,7 @@ export default function AboutPage() {
           <span className="inline-block text-electric text-xs font-semibold uppercase tracking-widest mb-4 px-3 py-1 bg-electric/10 rounded-full border border-electric/20">
             About One Source Solutions
           </span>
-          <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight mb-6">
+          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 leading-tight mb-6">
             Long Island's Exterior Cleaning Experts
           </h1>
           <p className="text-silver text-lg leading-relaxed max-w-2xl mx-auto">
@@ -48,7 +48,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <span className="inline-block text-electric text-xs font-semibold uppercase tracking-widest mb-3">Our Story</span>
-              <h2 className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-6">
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight mb-6">
                 Built on Long Island. Built for Long Island.
               </h2>
               <div className="space-y-4 text-silver leading-relaxed">
@@ -83,7 +83,7 @@ export default function AboutPage() {
                   { number: "100%", label: "Satisfaction Rate" },
                 ].map((stat, i) => (
                   <div key={i} className="bg-navy-card border border-navy-border rounded-2xl p-6 text-center">
-                    <div className="text-3xl font-bold text-white mb-1 whitespace-pre-line leading-tight">{stat.number}</div>
+                    <div className="text-3xl font-bold text-gray-900 mb-1 whitespace-pre-line leading-tight">{stat.number}</div>
                     <div className="text-silver text-sm">{stat.label}</div>
                   </div>
                 ))}
@@ -107,7 +107,7 @@ export default function AboutPage() {
                 <div className="w-10 h-10 rounded-lg bg-electric/10 flex items-center justify-center mb-4">
                   {v.icon}
                 </div>
-                <h3 className="text-white font-semibold mb-2">{v.title}</h3>
+                <h3 className="text-gray-900 font-semibold mb-2">{v.title}</h3>
                 <p className="text-silver text-sm leading-relaxed">{v.desc}</p>
               </div>
             ))}
@@ -121,7 +121,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div>
               <span className="inline-block text-electric text-xs font-semibold uppercase tracking-widest mb-3">Why Choose Us</span>
-              <h2 className="text-3xl sm:text-4xl font-bold text-white leading-tight mb-6">
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight mb-6">
                 The One Source Difference
               </h2>
               <p className="text-silver leading-relaxed mb-8">
@@ -145,7 +145,7 @@ export default function AboutPage() {
               </ul>
             </div>
             <div className="bg-navy-card border border-navy-border rounded-2xl p-8">
-              <h3 className="text-white font-bold text-xl mb-2">Our Services</h3>
+              <h3 className="text-gray-900 font-bold text-xl mb-2">Our Services</h3>
               <p className="text-silver text-sm mb-6">Everything your home's exterior needs, from one trusted source.</p>
               <div className="space-y-4">
                 {SERVICES.map((s) => (
@@ -155,7 +155,7 @@ export default function AboutPage() {
                     className="flex items-center justify-between p-4 bg-navy-light rounded-xl hover:bg-navy-border transition-colors duration-150 group"
                   >
                     <div>
-                      <div className="text-white font-medium text-sm">{s.name}</div>
+                      <div className="text-gray-900 font-medium text-sm">{s.name}</div>
                       <div className="text-silver text-xs mt-0.5">{s.shortDesc}</div>
                     </div>
                     <span className="text-electric text-sm group-hover:translate-x-1 transition-transform duration-150">→</span>
@@ -180,7 +180,7 @@ export default function AboutPage() {
               <Link
                 key={loc.slug}
                 href={`/locations/${loc.slug}`}
-                className="flex items-center justify-center gap-1.5 bg-navy-card border border-navy-border rounded-lg px-3 py-3 text-silver hover:text-white hover:border-electric/40 transition-all duration-150 text-sm text-center"
+                className="flex items-center justify-center gap-1.5 bg-navy-card border border-navy-border rounded-lg px-3 py-3 text-silver hover:text-gray-900 hover:border-electric/40 transition-all duration-150 text-sm text-center"
               >
                 <MapPin className="w-3 h-3 text-electric flex-shrink-0" />
                 {loc.name}
@@ -207,7 +207,7 @@ export default function AboutPage() {
           <div className="w-[500px] h-[300px] bg-electric/6 rounded-full blur-3xl" />
         </div>
         <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Ready to Work With Us?</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Ready to Work With Us?</h2>
           <p className="text-silver text-lg mb-8">
             Get your free, no-obligation estimate today. Call us or fill out our quick online form.
           </p>
@@ -215,7 +215,7 @@ export default function AboutPage() {
             <CTAButton href="/contact" variant="primary" size="lg">Get a Free Estimate</CTAButton>
             <a
               href={BUSINESS.phoneHref}
-              className="inline-flex items-center justify-center gap-2 bg-navy-card border border-navy-border text-white px-8 py-4 rounded-xl font-semibold hover:border-electric/50 transition-all duration-150"
+              className="inline-flex items-center justify-center gap-2 bg-navy-card border border-navy-border text-gray-900 px-8 py-4 rounded-xl font-semibold hover:border-electric/50 transition-all duration-150"
             >
               <Phone className="w-5 h-5 text-electric" />
               {BUSINESS.phone}

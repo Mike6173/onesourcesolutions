@@ -151,7 +151,7 @@ export default function FAQPage() {
           <span className="inline-block text-electric text-xs font-semibold uppercase tracking-widest mb-4 px-3 py-1 bg-electric/10 rounded-full border border-electric/20">
             FAQ
           </span>
-          <h1 className="text-4xl sm:text-5xl font-bold text-white leading-tight mb-5">
+          <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 leading-tight mb-5">
             Frequently Asked Questions
           </h1>
           <p className="text-silver text-lg leading-relaxed max-w-2xl mx-auto">
@@ -165,7 +165,7 @@ export default function FAQPage() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 space-y-14">
           {faqCategories.map((cat) => (
             <div key={cat.category}>
-              <h2 className="text-xl font-bold text-white mb-6 flex items-center gap-3">
+              <h2 className="text-xl font-bold text-gray-900 mb-6 flex items-center gap-3">
                 <span className="w-8 h-8 rounded-lg bg-electric/10 border border-electric/30 flex items-center justify-center text-electric text-xs font-bold">
                   {cat.category.charAt(0)}
                 </span>
@@ -183,7 +183,7 @@ export default function FAQPage() {
           <div className="w-[400px] h-[300px] bg-electric/6 rounded-full blur-3xl" />
         </div>
         <div className="relative z-10 max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">Still Have Questions?</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3">Still Have Questions?</h2>
           <p className="text-silver mb-8">
             We're happy to answer anything not covered here. Call us or send a message and we'll get back to you promptly.
           </p>

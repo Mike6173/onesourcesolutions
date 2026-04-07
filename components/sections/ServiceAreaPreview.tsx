@@ -20,7 +20,7 @@ export default function ServiceAreaPreview() {
               <Link
                 key={town}
                 href={`/locations/${loc.slug}`}
-                className="flex items-center gap-2 bg-navy-card border border-navy-border rounded-lg px-4 py-3 text-silver hover:text-white hover:border-electric/40 transition-all duration-150 text-sm group"
+                className="flex items-center gap-2 bg-navy-card border border-navy-border rounded-lg px-4 py-3 text-silver hover:text-gray-900 hover:border-electric/40 transition-all duration-150 text-sm group"
               >
                 <MapPin className="w-3.5 h-3.5 text-electric flex-shrink-0 group-hover:scale-110 transition-transform duration-150" />
                 {town}

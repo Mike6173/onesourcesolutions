@@ -68,7 +68,7 @@ export default function Testimonials() {
                 "{review.text}"
               </p>
               <div className="border-t border-navy-border pt-4">
-                <div className="font-semibold text-white text-sm">{review.name}</div>
+                <div className="font-semibold text-gray-900 text-sm">{review.name}</div>
                 <div className="text-silver text-xs mt-0.5">{review.location}</div>
               </div>
             </div>

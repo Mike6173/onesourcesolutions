@@ -24,7 +24,7 @@ export default function SectionHeader({
       )}
       <h2
         className={clsx(
-          "text-3xl sm:text-4xl font-bold text-white leading-tight",
+          "text-3xl sm:text-4xl font-bold text-gray-900 leading-tight",
           align === "center" && "max-w-2xl mx-auto",
           titleClass
         )}

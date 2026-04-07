@@ -15,14 +15,14 @@ export default function Hero() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-navy/75 bg-gradient-to-r from-navy/95 via-navy/80 to-navy/60" />
+        <div className="absolute inset-0 bg-white/50 bg-gradient-to-r from-white/75 via-white/55 to-white/30" />
       </div>
 
       {/* Subtle grid pattern */}
       <div
         className="absolute inset-0 opacity-[0.03]"
         style={{
-          backgroundImage: `linear-gradient(rgba(58,134,255,1) 1px, transparent 1px), linear-gradient(90deg, rgba(58,134,255,1) 1px, transparent 1px)`,
+          backgroundImage: `linear-gradient(rgba(90,157,183,1) 1px, transparent 1px), linear-gradient(90deg, rgba(90,157,183,1) 1px, transparent 1px)`,
           backgroundSize: "60px 60px",
         }}
       />
@@ -47,9 +47,9 @@ export default function Hero() {
           </div>
 
           {/* Headline */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-[1.1] mb-6">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 leading-[1.1] mb-6">
             Expert Exterior Cleaning for{" "}
-            <span className="text-gradient">Long Island Homes</span>
+            <span className="text-electric">Long Island Homes</span>
           </h1>
 
           {/* Subheadline */}
@@ -67,7 +67,7 @@ export default function Hero() {
             </Link>
             <a
               href={BUSINESS.phoneHref}
-              className="inline-flex items-center justify-center gap-2.5 bg-navy-card border border-navy-border text-white px-8 py-4 rounded-xl text-base font-semibold hover:border-electric/50 hover:bg-navy-light active:scale-95 transition-all duration-150"
+              className="inline-flex items-center justify-center gap-2.5 bg-navy-card border border-navy-border text-gray-900 px-8 py-4 rounded-xl text-base font-semibold hover:border-electric/50 hover:bg-navy-light active:scale-95 transition-all duration-150"
             >
               <Phone className="w-5 h-5 text-electric" />
               Call Now
@@ -78,12 +78,12 @@ export default function Hero() {
           <div className="flex flex-wrap items-center gap-6">
             <div className="flex items-center gap-2">
               <Shield className="w-5 h-5 text-electric" />
-              <span className="text-silver text-sm font-medium">Fully Insured</span>
+              <span className="text-gray-900 text-sm font-medium">Fully Insured</span>
             </div>
             <div className="w-px h-4 bg-navy-border hidden sm:block" />
             <div className="flex items-center gap-2">
               <MapPin className="w-5 h-5 text-electric" />
-              <span className="text-silver text-sm font-medium">Locally Owned & Operated</span>
+              <span className="text-gray-900 text-sm font-medium">Locally Owned & Operated</span>
             </div>
             <div className="w-px h-4 bg-navy-border hidden sm:block" />
             <div className="flex items-center gap-2">
@@ -92,14 +92,14 @@ export default function Hero() {
                   <Star key={i} className="w-4 h-4 text-yellow-400 fill-yellow-400" />
                 ))}
               </div>
-              <span className="text-silver text-sm font-medium">5-Star Rated</span>
+              <span className="text-gray-900 text-sm font-medium">5-Star Rated</span>
             </div>
           </div>
         </div>
       </div>
 
       {/* Bottom fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-navy to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent" />
     </section>
   );
 }

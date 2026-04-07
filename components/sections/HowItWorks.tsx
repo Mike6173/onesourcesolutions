@@ -42,7 +42,7 @@ export default function HowItWorks() {
                 </div>
               </div>
 
-              <h3 className="text-white font-semibold text-xl mb-3">{step.title}</h3>
+              <h3 className="text-gray-900 font-semibold text-xl mb-3">{step.title}</h3>
               <p className="text-silver text-sm leading-relaxed">{step.desc}</p>
             </div>
           ))}

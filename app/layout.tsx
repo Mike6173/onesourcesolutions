@@ -49,7 +49,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(LOCAL_BUSINESS_SCHEMA) }}
         />
       </head>
-      <body className="bg-navy text-silver antialiased">
+      <body className="bg-white text-gray-600 antialiased">
         <a
           href="#main-content"
           className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-electric focus:text-white focus:rounded-lg focus:font-medium"

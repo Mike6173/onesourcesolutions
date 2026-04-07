@@ -60,7 +60,7 @@ export default function WhyChooseUs() {
               <div className="w-12 h-12 rounded-xl bg-electric/10 flex items-center justify-center mb-5 group-hover:bg-electric/15 transition-colors duration-200">
                 {reason.icon}
               </div>
-              <h3 className="text-white font-semibold text-lg mb-2">{reason.title}</h3>
+              <h3 className="text-gray-900 font-semibold text-lg mb-2">{reason.title}</h3>
               <p className="text-silver text-sm leading-relaxed">{reason.desc}</p>
             </div>
           ))}

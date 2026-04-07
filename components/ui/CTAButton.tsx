@@ -28,7 +28,7 @@ export default function CTAButton({
     primary:
       "bg-electric-gradient text-white shadow-lg shadow-electric/20 hover:opacity-90",
     secondary:
-      "bg-navy-card border border-navy-border text-white hover:border-electric/50 hover:bg-navy-light",
+      "bg-navy-card border border-navy-border text-gray-900 hover:border-electric/50 hover:bg-navy-light",
     outline:
       "border-2 border-electric text-electric hover:bg-electric hover:text-white",
     ghost:
