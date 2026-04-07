@@ -58,7 +58,8 @@ export default function ServicePageLayout({
               className="object-cover"
               priority
             />
-            <div className="absolute inset-0 bg-white/50 bg-gradient-to-r from-white/75 via-white/55 to-white/30" />
+            <div className="absolute inset-0 bg-black/[0.15]" />
+            <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/75 to-white/50" />
           </div>
         )}
         <div className="absolute top-1/2 right-0 w-[500px] h-[500px] bg-electric/5 rounded-full blur-3xl" />

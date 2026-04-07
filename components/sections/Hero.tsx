@@ -15,7 +15,8 @@ export default function Hero() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-white/50 bg-gradient-to-r from-white/75 via-white/55 to-white/30" />
+        <div className="absolute inset-0 bg-black/[0.15]" />
+        <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/75 to-white/50" />
       </div>
 
       {/* Subtle grid pattern */}
@@ -34,14 +35,14 @@ export default function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="max-w-3xl">
           {/* Company Name */}
-          <p className="text-electric text-2xl sm:text-3xl font-bold tracking-tight mb-4">
+          <p className="text-gray-900 text-2xl sm:text-3xl font-bold tracking-tight mb-4">
             One Source Solutions
           </p>
 
           {/* Eyebrow */}
-          <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-electric/10 border border-electric/20 rounded-full">
-            <MapPin className="w-3.5 h-3.5 text-electric" />
-            <span className="text-electric text-xs font-semibold uppercase tracking-widest">
+          <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 bg-gray-900/5 border border-gray-900/10 rounded-full">
+            <MapPin className="w-3.5 h-3.5 text-electric-dark" />
+            <span className="text-gray-700 text-xs font-semibold uppercase tracking-widest">
               Serving Long Island, New York
             </span>
           </div>

@@ -1,4 +1,4 @@
-import { Zap, Home, Droplets, Sparkles } from "lucide-react";
+import { Zap, Home, Droplets, Sparkles, Building2, Layers } from "lucide-react";
 import ServiceCard from "@/components/ui/ServiceCard";
 import SectionHeader from "@/components/ui/SectionHeader";
 import CTAButton from "@/components/ui/CTAButton";
@@ -9,6 +9,8 @@ const iconMap: Record<string, React.ReactNode> = {
   "soft-house-washing": <Home className="w-6 h-6" />,
   "gutter-cleaning": <Droplets className="w-6 h-6" />,
   "window-cleaning": <Sparkles className="w-6 h-6" />,
+  "janitorial-services": <Building2 className="w-6 h-6" />,
+  "floor-cleaning": <Layers className="w-6 h-6" />,
 };
 
 export default function ServicesGrid() {
